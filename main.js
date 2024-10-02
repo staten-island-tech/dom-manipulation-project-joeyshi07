@@ -1,6 +1,6 @@
 const DOMSelectors = {
   header: document.querySelector("h1"),
-  button: document.querySelector("."),
+  button: document.querySelector("#button"),
   form: document.querySelector(".form"),
 };
 
