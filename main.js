@@ -16,3 +16,9 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 
 console.log(DOMSelectors.header);
 console.log(DOMSelectors.items);
+
+//create HTML for inputs, cards, container
+// select/query the HTML form and get valyes from inputs
+//turn values into object MOvie, Game. User, etc.
+//insert card with obj onto HTML
+// add event listener for remove button for JS
