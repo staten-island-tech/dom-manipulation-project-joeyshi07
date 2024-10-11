@@ -18,8 +18,27 @@ p {
   padding: 5px;
 }
 
-#button {
+.form {
   font-size: 20px;
   padding: 10px;
   margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  /*standardizing*/
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 5%;
+  justify-content: space-between;
+}
+
+.album-cover {
+  max-width: 100%;
+  height: auto;
 }
