@@ -2,7 +2,7 @@ const DOMSelectors = {
   header: document.querySelector("h1"),
   button: document.querySelector("#button"),
   form: document.querySelector(".form"),
-  image: document.querySelector(".album-cover"),
+  image: document.querySelector(".jellycat-pic"),
   container: document.querySelector(".container"),
 };
 
@@ -13,16 +13,16 @@ DOMSelectors.button.addEventListener("click", function (event) {
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault(); // not refreshing page
-  const albumName = document.querySelector(".album-name").value;
-  const artistName = document.querySelector(".artist-name").value;
-  const albumCover = document.querySelector(".album-cover").value;
+  const foodName = document.querySelector(".food-name").value;
+  const courseName = document.querySelector(".course-name").value;
+  const jellycatPicture = DOMSelectors.image.value;
 
   DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
     `<div class = "card">
-  <h2 class = "card-header"> ${albumName}</h2>
-  <img src="${albumCover}" alt="${albumName} cover" class = "album-cover" />
-  <p id = "artist-name"> By: ${artistName} </p>
+  <h2 class = "card-header"> ${foodName}</h2>
+  <img src="${jellycatPicture}" alt="${foodName} cover" class = "jellycat" />
+  <p id = "course-name"> ${courseName} </p>
   </div>`
   );
 });
