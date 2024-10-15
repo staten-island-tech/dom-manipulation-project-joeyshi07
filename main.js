@@ -14,24 +14,30 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   const courseName = DOMSelectors.course.value;
   const jellycatPicture = DOMSelectors.image.value;
 
-  DOMSelectors.container.insertAdjacentHTML(
-    "beforeend",
-    `<div class = "card">
-  <h3 class = "card-header"> ${foodName}</h3>
-  <img src="${jellycatPicture}" alt="${foodName} cover" class = "jellycat" />
-  <p id = "course-name"> ${courseName} </p>
-  <button class = "delete-button"> x </button> 
-  </div>`
-  );
+  function addCard(foodName, jellycatPicture, courseName) {
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+            <h3 class="card-header">${foodName}</h3>
+            <img src="${jellycatPicture}" alt="${foodName} cover" class="jellycat" />
+            <p id="course-name">${courseName}</p>
+            <button class="delete-button"> x </button> 
+        </div>`
+    );
+  }
+  addCard(foodName, jellycatPicture, courseName);
 
   DOMSelectors.food.value = "";
   DOMSelectors.course.value = "";
   DOMSelectors.image.value = "";
 
+  function deleteCard(button) {
+    button.parentElement.remove();
+  }
   const deleteButtons = document.querySelectorAll(".delete-button");
   deleteButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      button.parentElement.remove();
+      deleteCard(button);
     });
   });
 });
@@ -41,3 +47,8 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 //turn values into object MOvie, Game. User, etc.
 //insert card with obj onto HTML
 // add event listener for remove button for JS
+
+//const album
+// addcard(album)
+//clear fields
+//addremovebuttons

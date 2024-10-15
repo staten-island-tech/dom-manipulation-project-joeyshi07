@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
 html,
 body,
 * {
@@ -13,9 +15,14 @@ body,
   background-position: center;
   object-fit: cover;
   color: white;
-  padding: 10%;
+  padding: 5%;
 }
 
+.header-items {
+  /*background-color:rgba(255, 180, 133, 0.8);*/
+  padding: 5%;
+  border-radius: 50%;
+}
 
 #logo {
   height: 100px;
@@ -28,13 +35,16 @@ body,
 }
 
 h1 {
-  font-size: 70px; 
+  font-size: 85px; 
+  font-family: "Vollkorn", serif;
   text-shadow: 2px 2px 5px black;
+  margin: 5px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 33px;
   text-shadow: 2px 2px 5px black;
+  font-family: "Nunito", sans-serif;
 }
 
 h3 {
@@ -75,7 +85,7 @@ p {
 }
 
 .delete-button {
-  display: none; 
+  display: none;
   position: absolute;
   top: 0%;
   right: 0%;
@@ -89,7 +99,7 @@ p {
 }
 
 .card:hover .delete-button {
-  display: block; 
+  display: block;
 }
 
 .jellycat {
