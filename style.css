@@ -8,18 +8,43 @@ body,
   box-sizing: border-box;
 }
 
+.header {
+  background-image: url("https://cdn11.bigcommerce.com/s-23s5gfmhr7/product_images/uploaded_images/resized-jellycat-diner-new-york-experience-thumbnail.jpg");
+  background-position: center;
+  object-fit: cover;
+  color: white;
+  padding: 10%;
+}
+
+
+#logo {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 60, 106);
+  border-radius: 30%;
+  padding: 10px;
+  object-fit: cover;
+  box-shadow: 2px 2px black:
+}
+
 h1 {
-  font-size: 50px;
+  font-size: 70px; 
+  text-shadow: 2px 2px 5px black;
 }
 
 h2 {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+
+h3 {
   font-size: 20px;
   margin-top: 20px;
   padding: 5px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px;
 }
 
@@ -32,7 +57,8 @@ p {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+
 }
 .card {
   /*standardizing*/
@@ -44,6 +70,26 @@ p {
   padding: 5%;
   align-items: center;
   border: 2px solid black;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.delete-button {
+  display: none; 
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 10%;
+  width: 10%;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.card:hover .delete-button {
+  display: block; 
 }
 
 .jellycat {
