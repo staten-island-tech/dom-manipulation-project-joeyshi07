@@ -2,9 +2,9 @@ const DOMSelectors = {
   header: document.querySelector("h1"),
   button: document.querySelector("#button"),
   form: document.querySelector(".form"),
-  food: document.querySelector(".food-name"),
-  course: document.querySelector(".course-name"),
-  image: document.querySelector(".jellycat-pic"),
+  food: document.querySelector("#food-name"),
+  course: document.querySelector("#course-name"),
+  image: document.querySelector("#jellycat-pic"),
   container: document.querySelector(".container"),
 };
 

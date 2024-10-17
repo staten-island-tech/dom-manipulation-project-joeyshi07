@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CA:wght@100..400&family=Playwrite+SK:wght@100..400&display=swap');
+
 html,
 body,
 * {
@@ -54,9 +56,10 @@ body,
   z-index: 2; 
 }
 
+
 h1 {
   font-size: 85px; 
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Playwrite CA", serif;
   text-shadow: 2px 2px 5px black;
   margin: 5px;
   position: relative; 
@@ -80,18 +83,37 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 27px;
   padding: 5px;
   position: relative; 
   z-index: 2;
+  font-family: "Nunito", sans-serif;
+}
+
+.input-box {
+  height: 30px;
+  width: 200px;
+  margin-bottom: 15px;
+  
+}
+
+#button {
+  height: 45px;
+  width: 80px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: ";
 }
 
 .form {
-  font-size: 20px;
+  font-size: 27px;
   padding: 10px;
   margin: 20px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
