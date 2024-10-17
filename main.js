@@ -26,10 +26,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     );
   }
   addCard(foodName, jellycatPicture, courseName);
-
-  DOMSelectors.food.value = "";
-  DOMSelectors.course.value = "";
-  DOMSelectors.image.value = "";
+  clearFields();
 
   function deleteCard(button) {
     button.parentElement.remove();
@@ -41,6 +38,12 @@ DOMSelectors.form.addEventListener("submit", function (event) {
     });
   });
 });
+
+function clearFields() {
+  DOMSelectors.food.value = "";
+  DOMSelectors.course.value = "";
+  DOMSelectors.image.value = "";
+}
 
 //create HTML for inputs, cards, container
 // select/query the HTML form and get valyes from inputs
