@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-
 html,
 body,
 * {
@@ -11,17 +9,36 @@ body,
 }
 
 .header {
+  position: relative; /* Ensure positioning for the overlay */
   background-image: url("https://cdn11.bigcommerce.com/s-23s5gfmhr7/product_images/uploaded_images/resized-jellycat-diner-new-york-experience-thumbnail.jpg");
   background-position: center;
-  object-fit: cover;
+  background-size: cover; 
   color: white;
   padding: 5%;
+  z-index: 1;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100%; 
+}
+
+.header::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 146, 204, 0.65);
+  z-index: 0;
 }
 
 .header-items {
-  /*background-color:rgba(255, 180, 133, 0.8);*/
   padding: 5%;
   border-radius: 50%;
+  position: relative;
+  z-index: 2; 
 }
 
 #logo {
@@ -31,57 +48,72 @@ body,
   border-radius: 30%;
   padding: 10px;
   object-fit: cover;
-  box-shadow: 2px 2px black:
+  box-shadow: 2px 2px black;
+  margin: 10px;
+  position: relative; 
+  z-index: 2; 
 }
 
 h1 {
   font-size: 85px; 
-  font-family: "Vollkorn", serif;
+  font-family: "Frank Ruhl Libre", serif;
   text-shadow: 2px 2px 5px black;
   margin: 5px;
+  position: relative; 
+  z-index: 2; 
 }
 
 h2 {
   font-size: 33px;
   text-shadow: 2px 2px 5px black;
   font-family: "Nunito", sans-serif;
+  position: relative;
+  z-index: 2; 
 }
 
 h3 {
   font-size: 20px;
   margin-top: 20px;
   padding: 5px;
+  position: relative; 
+  z-index: 2; 
 }
 
 p {
   font-size: 20px;
   padding: 5px;
+  position: relative; 
+  z-index: 2;
 }
 
 .form {
   font-size: 20px;
   padding: 10px;
   margin: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
+
 .card {
-  /*standardizing*/
   width: 30vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 10px;
-  padding: 5%;
+  padding: 2%;
   align-items: center;
-  border: 2px solid black;
   position: relative;
   transition: transform 0.3s ease;
+  z-index: 2; 
+  background-color: antiquewhite;
+  box-shadow: 2px 2px 2px;
+
 }
 
 .delete-button {
@@ -96,6 +128,7 @@ p {
   border: none;
   padding: 5px;
   cursor: pointer;
+  z-index: 3; /* Added */
 }
 
 .card:hover .delete-button {
