@@ -21,7 +21,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
             <h3 class="card-header">${foodName}</h3>
             <img src="${jellycatPicture}" alt="${foodName} cover" class="jellycat" />
             <p id="course-name">${courseName}</p>
-            <button class="delete-button"> x </button> 
+            <img src = "https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-cancel-x-button-circle-vector-png-image_34682328.png" class="delete-button"> 
         </div>`
     );
   }
