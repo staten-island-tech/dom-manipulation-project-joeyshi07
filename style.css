@@ -135,9 +135,9 @@ p {
   position: relative;
   transition: transform 0.3s ease;
   border-radius: 10%;
-  border: 2px solid rgba(0, 146, 204, 0.65);
+  border: 3px solid rgba(0, 146, 204);
   z-index: 2; 
-  background-color: rgb(255, 235, 235);
+  background-color: rgb(255, 239, 223);
   box-shadow: 0px 0px 6px rgba(0, 146, 204, 0.65);
 
 }
@@ -165,5 +165,5 @@ p {
   display: block;
   object-fit: cover;
   border-radius: 10%;
-  box-shadow: 0px 0px 5px rgba(109, 57, 1, 0.8);
+  box-shadow: 0px 0px 5px rgba(142, 12, 43, 0.8);
 }
