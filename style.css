@@ -45,7 +45,8 @@ body,
 }
 
 #logo {
-  height: 125px;
+  height: 15vw;
+  width: 15vw;
   background-color: rgb(255, 60, 106);
   border-radius: 30%;
   padding: 3.2%;
@@ -57,7 +58,7 @@ body,
 
 
 h1 {
-  font-size: 105px; 
+  font-size: 10vw; 
   font-family: "Playwrite CA", serif;
   text-shadow: 2px 2px 7px rgba(109, 57, 1, 0.8);
   position: relative; 
@@ -66,7 +67,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 5vw;
   text-shadow: 2px 2px 4px black;
   font-family: "Nunito", sans-serif;
   position: relative;
