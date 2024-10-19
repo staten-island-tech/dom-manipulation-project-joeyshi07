@@ -48,7 +48,7 @@ body,
   height: 125px;
   background-color: rgb(255, 60, 106);
   border-radius: 30%;
-  padding: 3.5%;
+  padding: 3.2%;
   object-fit: cover;
   box-shadow: 2px 2px black;
   position: relative; 
@@ -57,7 +57,7 @@ body,
 
 
 h1 {
-  font-size: 90px; 
+  font-size: 105px; 
   font-family: "Playwrite CA", serif;
   text-shadow: 2px 2px 7px rgba(109, 57, 1, 0.8);
   position: relative; 
@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: 2px 2px 4px black;
   font-family: "Nunito", sans-serif;
   position: relative;
@@ -77,7 +77,7 @@ h2 {
 h3 {
   font-family: "Playwrite CA", serif;
   font-size: 35px;
-  margin: 5%;
+  margin: 10px;
   position: relative; 
   z-index: 2; 
   color: rgb(255, 60, 106);
@@ -87,6 +87,7 @@ h3 {
 p {
   font-size: 24px;
   padding: 5px;
+  margin: 10px;
   position: relative; 
   z-index: 2;
   font-family: "Nunito", sans-serif;
@@ -125,7 +126,8 @@ p {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; 
+  align-items: flex-start;
   gap: 20px;
 }
 
@@ -187,6 +189,7 @@ p {
 .jellycat {
   width: 100%;
   margin: auto;
+  margin: 20px;
   padding: 1%;
   display: block;
   object-fit: contain;
