@@ -60,7 +60,7 @@ body,
 h1 {
   font-size: 10vw; 
   font-family: "Playwrite CA", serif;
-  text-shadow: 2px 2px 7px rgba(109, 57, 1, 0.8);
+  text-shadow: 2px 2px 4px rgb(255, 155, 33);
   position: relative; 
   z-index: 2; 
   margin-bottom: 10px;
@@ -68,11 +68,11 @@ h1 {
 
 h2 {
   font-size: 5vw;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 7px rgb(29, 29, 29);
   font-family: "Nunito", sans-serif;
   position: relative;
   z-index: 2; 
-  color: rgb(255, 155, 33);
+  color: rgba(255, 155, 33, 0.8);
 }
 
 h3 {
