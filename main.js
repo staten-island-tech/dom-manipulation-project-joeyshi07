@@ -8,6 +8,8 @@ const DOMSelectors = {
   container: document.querySelector(".container"),
 };
 
+const album = DOMSelectors.container;
+
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault(); // not refreshing page
   const foodName = DOMSelectors.food.value;
@@ -15,7 +17,7 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   const jellycatPicture = DOMSelectors.image.value;
 
   function addCard(foodName, jellycatPicture, courseName) {
-    DOMSelectors.container.insertAdjacentHTML(
+    album.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
             <h3 class="card-header">${foodName}</h3>
