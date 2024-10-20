@@ -16,6 +16,7 @@ body,
   background-image: url("https://cdn11.bigcommerce.com/s-23s5gfmhr7/product_images/uploaded_images/resized-jellycat-diner-new-york-experience-thumbnail.jpg");
   background-position: center;
   background-size: cover; 
+  background-repeat: repeat;
   color: white;
   padding: 5%;
   z-index: 1;
@@ -183,7 +184,6 @@ p {
 }
 
 .delete-button {
-  display: none;
   position: absolute;
   width: 20%;
   top: 0%;
@@ -191,10 +191,6 @@ p {
   border: none;
   cursor: pointer;
   z-index: 3; /* Added */
-}
-
-.card:hover .delete-button {
-  display: block;
 }
 
 .jellycat {

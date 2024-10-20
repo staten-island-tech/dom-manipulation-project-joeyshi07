@@ -12,6 +12,7 @@ const album = DOMSelectors.container;
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault(); // not refreshing page
+  DOMSelectors.button.style.backgroundColor = "rgb(255, 204, 215)";
   const foodName = DOMSelectors.food.value;
   const courseName = DOMSelectors.course.value;
   const jellycatPicture = DOMSelectors.image.value;
@@ -45,6 +46,10 @@ function clearFields() {
   DOMSelectors.food.value = "";
   DOMSelectors.course.value = "";
   DOMSelectors.image.value = "";
+
+  setTimeout(() => {
+    DOMSelectors.button.style.backgroundColor = "rgb(255, 60, 106)";
+  }, 200);
 }
 
 //create HTML for inputs, cards, container
