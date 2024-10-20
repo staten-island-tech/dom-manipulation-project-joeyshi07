@@ -15,7 +15,6 @@ body,
   position: relative; /* Ensure positioning for the overlay */
   background-image: url("https://cdn11.bigcommerce.com/s-23s5gfmhr7/product_images/uploaded_images/resized-jellycat-diner-new-york-experience-thumbnail.jpg");
   background-position: center;
-  background-size: cover; 
   background-repeat: repeat;
   color: white;
   padding: 5%;
@@ -46,7 +45,8 @@ body,
 }
 
 #logo {
-  height: 12rem;
+  height: 10vw;
+  width: 10vw;
   background-color: rgb(255, 60, 106);
   border-radius: 30%;
   padding: 3.2%;
@@ -58,7 +58,7 @@ body,
 
 
 h1 {
-  font-size: 9rem; 
+  font-size: 8vw; 
   font-family: "Playwrite CA", serif;
   text-shadow: 2px 2px 4px rgb(255, 155, 33);
   position: relative; 
@@ -67,7 +67,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4vw;
   text-shadow: 2px 2px 7px rgb(29, 29, 29);
   font-family: "Nunito", sans-serif;
   position: relative;
