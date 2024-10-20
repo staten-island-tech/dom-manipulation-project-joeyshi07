@@ -59,7 +59,7 @@ body,
 
 
 h1 {
-  font-size: 8vw; 
+  font-size: 95px; 
   font-family: "Playwrite CA", serif;
   text-shadow: 2px 2px 4px rgb(255, 155, 33);
   position: relative; 
@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 45px;
   text-shadow: 2px 2px 7px rgb(29, 29, 29);
   font-family: "Nunito", sans-serif;
   position: relative;
