@@ -107,8 +107,7 @@ p {
 
 .input-box::placeholder {
   color: gray; /* Change the placeholder text color */
-  font-style: italic; /* Optional italic style */
-  font-size: 20px; /* Optional size adjustment */
+  font-style: italic; 
 }
 
 #button {
