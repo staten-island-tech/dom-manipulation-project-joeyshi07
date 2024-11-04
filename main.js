@@ -20,12 +20,12 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   function addCard(foodName, jellycatPicture, courseName) {
     album.insertAdjacentHTML(
       "beforeend",
-      `<div "https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-cancel-x-button-circle-vector-png-image_34682328.png" class="delete-button"> 
-        </div>`iv class="card">
+      `<div class="card">
             <h3 class="card-header">${foodName}</h3>
             <img src="${jellycatPicture}" alt="${foodName} cover" class="jellycat" />
             <p id="course-name">${courseName}</p>
-            <img src 
+            <img src = "https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-cancel-x-button-circle-vector-png-image_34682328.png" class="delete-button"> 
+        </div>`
     );
   }
   addCard(foodName, jellycatPicture, courseName);
